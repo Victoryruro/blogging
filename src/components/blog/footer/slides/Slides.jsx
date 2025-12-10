@@ -17,7 +17,7 @@ const Slides = () => {
   
   return (
     <div className='slide'>
-        <h2>Single Item</h2>
+        <h2>Categories</h2>
         <Slider {...settings}>
             {
                 Sdata.map((value)=>{

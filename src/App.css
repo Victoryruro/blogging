@@ -47,7 +47,7 @@ h2{
 }
 .home-img img{
   position: absolute;
-  left: -40%;
+  left: -0%;
   top: 0%;
   height: 110vh !important;
   z-index: -1;
