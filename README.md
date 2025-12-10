@@ -1,6 +1,3 @@
-Here is the **shorter, simpler README** with **no setup section** and your **GitHub username added**.
-
----
 
 # 📖 Writers & Readers Blog
 
