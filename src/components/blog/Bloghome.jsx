@@ -1,5 +1,8 @@
 import React from 'react'
 import Slides from './footer/slides/Slides'
+import Card from './card.jsx'
+import Footer from './footer/footer.jsx'
+import Cardtwo from './Cardtwo.jsx'
 
 
 
@@ -7,12 +10,12 @@ const bloghome = () => {
   const data =[
     {
         id:1,
-        titleOne:"my first blog and intro",
-        titleTwo:"my second blog",
-        paraOne:"this is my first blog para",
-        paraTwo:"this is my second blog para",
-        name:"author name",
-        subTitle:"blog subtitle",
+        titleOne:"A New Chapter in Digital Expression",
+        titleTwo:"A Fresh Start for Writers and Curious Minds",
+        paraOne:"Welcome to the beginning of my storytelling journey.",
+        paraTwo:"Embracing Creativity and Authenticity",
+        name:"Daniel Michaels",
+        subTitle:"Founder, The Write Space",
         qrCode:"./images/qrcode.png",
         cover:'./images/blogCover.jpg'
     }
@@ -29,7 +32,7 @@ const bloghome = () => {
                                     <h1>WM</h1>
                                 </div>
                                 <div className="home-img">
-                                    <img src={item.cover} alt="homeImg"  height={'100%'} />
+                                    <img src={item.cover} alt="homeImg"  height={'100%'} loading='lazy' />
                                 </div>
                                 <div className="text">
                                     <h1>{item.titleOne}</h1>
@@ -42,7 +45,7 @@ const bloghome = () => {
                                     <span>{item.subTitle}</span>
                                 </div>
                                 <div className="qr-code">
-                                    <img src={item.qrCode} alt="qrCode" height={'130px'} />
+                                    <img src={item.qrCode} alt="qrCode" height={'130px'} loading='lazy' />
                                 </div>
                             </div>
                         )
@@ -51,6 +54,9 @@ const bloghome = () => {
             </div>
             <div className="right-content">
                 <Slides/>
+                <Card/>
+                <Cardtwo/>
+                <Footer/>
             </div>
 
         </section>

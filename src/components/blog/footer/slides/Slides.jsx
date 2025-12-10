@@ -17,14 +17,14 @@ const Slides = () => {
   
   return (
     <div className='slide'>
-        <h2>Categories</h2>
+       
         <Slider {...settings}>
             {
                 Sdata.map((value)=>{
                     return(
                         <div className='box'>
-                            <div className="image">
-                                <img src={value.cover} alt="image"  height={''} />
+                            <div className="img">
+                                <img src={value.cover} alt="image"  height={''} loading='lazy'/>
                             </div>
                             <div className="text">
                                 <span>{value.category}</span>

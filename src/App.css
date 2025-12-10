@@ -10,6 +10,7 @@
 span{
   color: red;
   font-weight: 400;
+  font-size: 18px;
   text-transform: capitalize;
 }
 h2{
@@ -75,8 +76,8 @@ h2{
   margin-top: 15%;
 }
 .left-content .text h1{
-  font-size: 48px;
-  line-height: 50px;
+  font-size: 45px;
+  line-height: 48px;
   text-transform: capitalize;
 }
 .left-content .text p{
@@ -102,4 +103,95 @@ h2{
   position: absolute;
   right: 0;
   
+}
+.img{
+  overflow: hidden;
+  transition: 1s ;
+}
+.img img:hover{
+  transform: scale(1.2);
+}
+img{
+  
+  transition: 1s ;
+}
+
+@media only  screen and (max-width:1200px){
+  .home{
+    flex-direction: column;
+  }
+  .home-img img {
+    position: absolute;
+    left: -10%;
+    top: 0%;
+    height: 165vh !important;
+    z-index: -1;
+}
+  .left-content , .right-content{
+    width: 100%;
+    position: relative;
+  
+  }
+  .left-content{
+    position: relative;
+    height: auto;
+  }
+
+}
+@media only  screen and (max-width:768px){
+  .home-img img {
+    position: absolute;
+    left: -20%;
+    top: 0%;
+    height: 155vh !important;
+    z-index: -1;
+}
+  .left-content .text{
+    width: 70%;
+    margin-top: 25%;
+  }
+  .left-content .text h1{
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .left-content .qr-code{
+    margin-top: 60%;
+    border-radius: 4px;
+  }
+  .left-content .qr-code img{
+    
+    height: 100px;
+  }
+  .right-content{
+    padding: 20px;
+  }
+}
+@media only  screen and (max-width:480px){
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .home-img img {
+    position: absolute;
+    left: -90%;
+    height: 115vh !important;
+    top: 0%;
+    
+}
+  .left-content .text{
+    width: 90%;
+    margin-top: 30%;
+  }
+  .left-content .text h1{     
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .left-content .qr-code{
+    margin-top:90%;
+  }
+  .left-content .qr-code img{
+    
+    height: 70px;
+  }
 }

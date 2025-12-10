@@ -1,0 +1,12 @@
+.card .img{
+    margin-bottom: 20px;
+}
+.card img{
+    width: 100%;
+    
+}
+.card h2{
+    font-size: 20px;
+    line-height: 30px;
+    
+}
